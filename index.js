@@ -12,9 +12,9 @@ var twitAuthor = document.getElementById("twit-attribution-input")
 var twitSearch = document.getElementById("navbar-search-input")
 var modalBackdrop = document.getElementById("modal-backdrop")
 var modal = document.getElementById("create-twit-modal")
-var modalCancelButton = document.getElementsByClassName("modal-cancel-button")[0]
-var modalCloseButton = document.getElementsByClassName("modal-close-button")[0]
-var modalAcceptButton = document.getElementsByClassName("modal-accept-button")[0]
+var modalCancelButton = document.getElementsByClassName("modal-cancel-button")
+var modalCloseButton = document.getElementsByClassName("modal-close-button")
+var modalAcceptButton = document.getElementsByClassName("modal-accept-button")
 var twitSearchButton = document.getElementById("navbar-search-button")
 
 function modalToggle(event) {
