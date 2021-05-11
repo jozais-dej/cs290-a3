@@ -17,7 +17,18 @@ var modalCloseButton = document.getElementsByClassName("modal-close-button")[0]
 var modalAcceptButton = document.getElementsByClassName("modal-accept-button")[0]
 var twitSearchButton = document.getElementById("navbar-search-button")
 
-
+function modalToggle(event) {
+    if (modal.classList.contains("hidden")) {
+        twitText.value = ""
+        twitAuthor.value = ""
+        modal.classList.remove('hidden')
+        modalBackdrop.classList.remove('hidden')
+    }
+    else {
+        modal.classList.add('hidden')
+        modalBackdrop.classList.add('hidden')
+    }
+}
 
 function addTwit(event) {
 
