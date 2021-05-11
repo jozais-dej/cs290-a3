@@ -49,13 +49,13 @@ function addTwit(event) {
     text.classList.add('twit-text')
     text.textContent = twitText.value
 
-    var author = document.createElement('a')
-    author.href = '#'
-    author.textContent = twitAuthor.value
+    var author1 = document.createElement('a')
+    author1.href = '#'
+    author1.textContent = twitAuthor.value
 
     var author = document.createElement('p')
     author.classList.add('twit-author')
-    author.appendChild(author)
+    author.appendChild(author1)
 
     var twitContent = document.createElement('div')
     twitContent.classList.add("twit-content")
