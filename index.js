@@ -12,10 +12,10 @@ var twitAuthor = document.getElementById("twit-attribution-input")
 var twitSearch = document.getElementById("navbar-search-input")
 var modalBackdrop = document.getElementById("modal-backdrop")
 var modal = document.getElementById("create-twit-modal")
-var modalCancel = document.getElementsByClassName("modal-cancel-button")[0]
-var modalClose = document.getElementsByClassName("modal-close-button")[0]
-var modalAccept = document.getElementsByClassName("modal-accept-button")[0]
-var twitSearch = document.getElementById("navbar-search-button")
+var modalCancelButton = document.getElementsByClassName("modal-cancel-button")[0]
+var modalCloseButton = document.getElementsByClassName("modal-close-button")[0]
+var modalAcceptButton = document.getElementsByClassName("modal-accept-button")[0]
+var twitSearchButton = document.getElementById("navbar-search-button")
 
 function modalToggle(event) {
     if (modal.classList.contains("hidden")) {
@@ -33,7 +33,7 @@ function modalToggle(event) {
 function addTwit(event) {
 
     if ((twitText.value == "") || (twitAuthor.value == "")) {
-        alert("Please enter Text and Author value")
+        alert("Please enter Text and Author values")
         return
     }
 
@@ -99,8 +99,8 @@ function search(event) {
 }
 
 button.addEventListener('click', modalToggle)
-modalCancel.addEventListener('click', modalToggle)
-modalClose.addEventListener('click', modalToggle)
-modalAccept.addEventListener('click', addTwit)
-twitSearch.addEventListener('click', search)
+modalCancelButton.addEventListener('click', modalToggle)
+modalCloseButton.addEventListener('click', modalToggle)
+modalAcceptButton.addEventListener('click', addTwit)
+twitSearchButton.addEventListener('click', search)
 twitSearch.addEventListener('keyup', search)
