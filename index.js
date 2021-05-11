@@ -13,7 +13,7 @@ var modalCancelButton = document.getElementsByClassName("modal-cancel-button")[0
 var modalCloseButton = document.getElementsByClassName("modal-close-button")[0]
 var modalAcceptButton = document.getElementsByClassName("modal-accept-button")[0]
 var twitText = document.getElementById("twit-text-input")
-var twitAuthor = document.getElementById("twit-attribution-input")
+var twitAuthor = document.getElementById("twit-author-input")
 var twitSearch = document.getElementById("navbar-search-input")
 var twitSearchButton = document.getElementById("navbar-search-button")
 
