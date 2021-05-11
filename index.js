@@ -33,11 +33,11 @@ function modalToggle(event) {
 function addTwit(event) {
 
     if ((twitText.value == "") || (twitAuthor.value == "")) {
-        alert("Please enter Text and Author information")
+        alert("Please enter Text and Author value")
         return
     }
 
-    var icon = document.createElement('a')
+    var icon = document.createElement('i')
     icon.classList.add('fa')
     icon.classList.add('fa-bullhorn')
 
@@ -45,15 +45,15 @@ function addTwit(event) {
     twitIcon.classList.add('twit-icon')
     twitIcon.appendChild(icon)
 
-    var text = document.createElement('b')
+    var text = document.createElement('p')
     text.classList.add('twit-text')
     text.textContent = twitText.value
 
-    var author1 = document.createElement('c')
+    var author1 = document.createElement('a')
     author1.href = '#'
     author1.textContent = twitAuthor.value
 
-    var author = document.createElement('b')
+    var author = document.createElement('p')
     author.classList.add('twit-author')
     author.appendChild(author1)
 
