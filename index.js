@@ -53,14 +53,14 @@ function addTwit(event) {
     author.href = '#'
     author.textContent = twitAuthor.value
 
-    var attribution = document.createElement('p')
-    attribution.classList.add('twit-attribution')
-    attribution.appendChild(author)
+    var author = document.createElement('p')
+    author.classList.add('twit-author')
+    author.appendChild(author)
 
     var twitContent = document.createElement('div')
     twitContent.classList.add("twit-content")
     twitContent.appendChild(text)
-    twitContent.appendChild(attribution)
+    twitContent.appendChild(author)
 
 
     var twit = document.createElement('article')
