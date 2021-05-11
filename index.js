@@ -32,6 +32,11 @@ function modalToggle(event) {
 
 function addTwit(event) {
 
+    if ((twitText.value == "") || (twitAuthor.value == "")) {
+        alert("Please enter Text and Author information")
+        return;
+    }
+
     var icon = document.createElement('i');
     icon.classList.add('fa');
     icon.classList.add('fa-bullhorn');
@@ -65,11 +70,6 @@ function addTwit(event) {
 
     var body = document.getElementsByClassName('twit-container')[0];
     body.appendChild(twit);
-
-    if ((twitText.value == "") || (twitAuthor.value == "")) {
-        alert("Please enter Text and Author information")
-        return;
-    }
 
     modalToggle();
 }
