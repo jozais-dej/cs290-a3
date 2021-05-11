@@ -37,7 +37,7 @@ function addTwit(event) {
         return
     }
 
-    var icon = document.createElement('i')
+    var icon = document.createElement('a')
     icon.classList.add('fa')
     icon.classList.add('fa-bullhorn')
 
@@ -45,15 +45,15 @@ function addTwit(event) {
     twitIcon.classList.add('twit-icon')
     twitIcon.appendChild(icon)
 
-    var text = document.createElement('p')
+    var text = document.createElement('b')
     text.classList.add('twit-text')
     text.textContent = twitText.value
 
-    var author1 = document.createElement('a')
+    var author1 = document.createElement('c')
     author1.href = '#'
     author1.textContent = twitAuthor.value
 
-    var author = document.createElement('p')
+    var author = document.createElement('b')
     author.classList.add('twit-author')
     author.appendChild(author1)
 
