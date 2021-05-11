@@ -98,4 +98,9 @@ function search(event) {
     }
 }
 
-
+button.addEventListener('click', modalToggle)
+modalCancelButton.addEventListener('click', modalToggle)
+modalCloseButton.addEventListener('click', modalToggle)
+modalAcceptButton.addEventListener('click', addTwit)
+twitSearchButton.addEventListener('click', search)
+twitSearch.addEventListener('keyup', search)
