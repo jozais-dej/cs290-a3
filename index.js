@@ -85,17 +85,6 @@ function search(event) {
             twits[i].classList.add('hidden')
         }
     }
-    if (twits.length > 8) {
-        for (i = 8; i < twits.length; i++) {
-            if ((twits[i].childNodes[1].childNodes[0].textContent.includes(twitSearch.value)) || (twits[i].childNodes[1].childNodes[1].textContent.includes(twitSearch.value))) {
-                twits[i].classList.remove('hidden')
-                continue
-            }
-            else {
-                twits[i].classList.add('hidden')
-            }
-        }
-    }
 }
 
 button.addEventListener('click', modalToggle)
